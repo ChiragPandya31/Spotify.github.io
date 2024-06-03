@@ -38,7 +38,7 @@ async function getSongs(folder) {
     const element = as[index];
     if (element.href.endsWith(".mp3")) {
         var filename = element.href.substring(element.href.lastIndexOf('/') + 1);
-        var newUrl = ` https://chiragpandya31.github.io/Spotify.github.io/${folder}/${filename}`;
+        var newUrl = `https://chiragpandya31.github.io/Spotify.github.io/Spotify.github.io/${folder}/${filename}`;
         element.href = newUrl
       songs.push(element.href.split(`${folder}/`)[1]);
     }
